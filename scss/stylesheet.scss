@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700,900);
-@import "maps"; // maps for Sass file
-@import "variables"; // Base variables for Sass file
 @import "functions";
 @import "mixins";
+@import "maps"; // maps for Sass file
+@import "variables"; // Base variables for Sass file
 @import "reset";
 
 //////// BEGIN STYLES \\\\\\\\
@@ -72,8 +72,40 @@ a {
     }
 
 
-    .menu-toggle {
+    .nav-toggle {
+        height: 40px;
+        padding: 15px 0;
         float: left;
+        @include box-sizing(border-box);
+        cursor: pointer;
+
+        .patty {
+            position: relative;
+            background: map-get($pallette, purple);
+            width: 30px;
+            height: 5px;
+            border-radius: 5px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 8px;
+                background: map-get($pallette, purple);
+                width: 30px;
+                height: 5px;
+                border-radius: 5px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: -8px;
+                background: map-get($pallette, purple);
+                width: 30px;
+                height: 5px;
+                border-radius: 5px;
+            }
+        }
     }
 
     .nav-menu {

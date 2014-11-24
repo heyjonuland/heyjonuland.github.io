@@ -72,8 +72,41 @@ a {
     padding: 10px;
   }
 }
-.site-header .menu-toggle {
+.site-header .nav-toggle {
+  height: 40px;
+  padding: 15px 0;
   float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.site-header .nav-toggle .patty {
+  position: relative;
+  background: #32144a;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+.site-header .nav-toggle .patty:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  background: #32144a;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+.site-header .nav-toggle .patty:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  background: #32144a;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
 }
 .site-header #logo {
   background: transparent url("../images/logos/icon/purple/ulandFlag-outline.png") center center no-repeat;
