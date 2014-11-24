@@ -85,6 +85,7 @@ ul {
         position: fixed;
         border-right: 5px solid darken(#FFF, 20%);
         display: none;
+        z-index: 990;
 
         ul {
             text-align: center;
