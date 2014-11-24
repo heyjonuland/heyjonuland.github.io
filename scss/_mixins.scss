@@ -1,0 +1,17 @@
+// Mixins
+
+//Box-sizing
+@mixin box-sizing($val) {
+	-webkit-box-sizing: $val;
+	-moz-box-sizing: $val;
+	-ms-box-sizing: $val;
+	-o-box-sizing: $val;
+	box-sizing: $val;
+}
+
+//Breakpoint Mixin
+
+@mixin breakpoint($device) {
+	@media screen and (max-width: map-get($breakpoints, $device)) { @content; };
+}
+

@@ -1,0 +1,30 @@
+
+
+
+// Typography
+$primary-font: 'Roboto';
+$secondary-font: 'Helvetica';
+$tertiary-font: Arial, 'Sans-serif';
+$font-stack: $primary-font, $secondary-font, $tertiary-font;
+
+$body-font-size: 14px;
+$h1-font-size: ($body-font-size * 3);
+$h2-font-size: ($body-font-size * 1.5);
+$byline-font-size: ($body-font-size * .75);
+
+$h1-text-color: map-get($pallette, green); 
+$h2-text-color: map-get($pallette, violet);
+$body-text-color: map-get($pallette, black);
+$byline-text-color: map-get($pallette, sky);
+$hyperlink-text-color: map-get($pallette, gold);
+
+// Other
+$default-transition-time: .3s;
+
+
+// Placeholders
+%full-screen {
+	width: 100%;
+	height: 100%;
+}
+

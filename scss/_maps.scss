@@ -1,0 +1,33 @@
+// Maps
+
+//Color
+$pallette: (
+	magenta: #7D224B,
+	blue: #3B4D7D,
+	gold: #F5B44C,
+	green: #629638,
+	violet: #5F3B7D,
+	sky: #5F7DC9,
+	orange: #E68245,
+	purple: #32144A,
+	black: #0F0617,
+	);
+
+$portfolio-items: (
+	Qualtrics: map-get($pallette, magenta),
+	DarkEnergy: map-get($pallette, blue),
+	SeventhChamber: map-get($pallette, gold),
+	Freehand: map-get($pallette, green),
+	Aesthetly: map-get($pallette, violet),
+	Adlab: map-get($pallette, sky),
+	BradleyGroup: map-get($pallette, orange),
+	BradleyPR: map-get($pallette, purple),
+	);
+
+//Layout
+$breakpoints: (
+	mobile: 480px,
+	tablet: 800px,
+	desktop: 1000px,
+	);
+

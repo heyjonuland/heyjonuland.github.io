@@ -1,0 +1,9 @@
+//Image-finder
+@function image-finder ($path, $size, $color, $name, $type, $style: '') {
+	@if $style == '' {
+		@return url('../images/#{$path}/#{$size}/#{$color}/#{$name}.#{$type}')
+	} @else {
+		@return url('../images/#{$path}/#{$size}/#{$color}/#{$name}-#{$style}.#{$type}')
+	}
+	
+}
