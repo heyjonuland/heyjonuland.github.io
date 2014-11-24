@@ -44,6 +44,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .clearfix:before {
   content: '';
   display: table;
@@ -64,16 +69,52 @@ a {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px 50px;
+  padding: 8px 50px;
   z-index: 999;
 }
 @media screen and (max-width: 480px) {
   .site-header {
-    padding: 10px;
+    padding: 7px 10px;
   }
 }
-.site-header .nav-toggle {
+.site-header .nav-menu {
+  width: 100%;
+  height: 100%;
+  background: rgba(95, 125, 201, 0.9);
+  top: 0;
+  left: 0;
+  position: fixed;
+  border-right: 5px solid #cccccc;
+  display: none;
+}
+.site-header .nav-menu ul {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 21px;
+}
+.site-header .nav-menu ul a {
+  padding: 20px 0;
+  display: block;
+  transition: all .3s;
+  color: #fff;
+}
+.site-header .nav-menu ul a:hover {
+  background: rgba(59, 77, 125, 0.8);
+}
+.site-header #logo {
+  background: transparent url("../images/logos/icon/purple/ulandFlag-outline.png") center center no-repeat;
+  float: right;
   height: 40px;
+  width: 60px;
+}
+.site-header #logo a {
+  padding: 20px 30px;
+  display: block;
+}
+
+.nav-toggle {
+  height: 40px;
+  width: 40px;
   padding: 15px 0;
   float: left;
   -webkit-box-sizing: border-box;
@@ -82,24 +123,20 @@ a {
   -o-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
+  z-index: 999;
+  transition: all linear .3s;
+  position: absolute;
 }
-.site-header .nav-toggle .patty {
+.nav-toggle .patty {
   position: relative;
   background: #32144a;
   width: 30px;
   height: 5px;
   border-radius: 5px;
+  margin: 3px auto;
+  transition: all linear .3s;
 }
-.site-header .nav-toggle .patty:before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  background: #32144a;
-  width: 30px;
-  height: 5px;
-  border-radius: 5px;
-}
-.site-header .nav-toggle .patty:after {
+.nav-toggle .patty:before {
   content: '';
   position: absolute;
   top: -8px;
@@ -107,15 +144,49 @@ a {
   width: 30px;
   height: 5px;
   border-radius: 5px;
+  transition: all linear .3s;
 }
-.site-header #logo {
-  background: transparent url("../images/logos/icon/purple/ulandFlag-outline.png") center center no-repeat;
-  float: right;
-  height: 35px;
-  width: 60px;
+.nav-toggle .patty:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  background: #32144a;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all linear .3s;
 }
-.site-header #logo a {
-  padding: 15px 30px;
+
+.toggle-open {
+  border: 3px solid #FFF;
+}
+.toggle-open .patty {
+  background: transparent;
+  margin: 0 auto;
+}
+.toggle-open .patty:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 1px;
+  height: 3px;
+  background-color: #FFF;
+}
+.toggle-open .patty:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 1px;
+  height: 3px;
+  background-color: #FFF;
+}
+
+.menu-open {
+  display: block !important;
 }
 
 .banner-container {
@@ -247,10 +318,10 @@ a {
   display: block;
   transition: all 0.3s;
 }
-.portfolio-item a:hover {
+.portfolio-item a:hover, .portfolio-item a:active, .portfolio-item a:focus {
   background: rgba(0, 0, 0, 0.5);
 }
-.portfolio-item a:hover h2, .portfolio-item a:hover h3 {
+.portfolio-item a:hover h2, .portfolio-item a:hover h3, .portfolio-item a:active h2, .portfolio-item a:active h3, .portfolio-item a:focus h2, .portfolio-item a:focus h3 {
   color: #FFF;
 }
 

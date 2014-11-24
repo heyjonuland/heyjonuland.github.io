@@ -40,6 +40,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 .clearfix {
     &:before {
         content: '';
@@ -60,7 +65,7 @@ a {
     width: 100%;
     height: 60px;
     @include box-sizing(border-box);
-    padding: 10px 50px;
+    padding: 8px 50px;
     z-index: 999;
 
      @include breakpoint(tablet) {
@@ -68,60 +73,119 @@ a {
     }
 
     @include breakpoint(mobile) {
-        padding: 10px;
-    }
-
-
-    .nav-toggle {
-        height: 40px;
-        padding: 15px 0;
-        float: left;
-        @include box-sizing(border-box);
-        cursor: pointer;
-
-        .patty {
-            position: relative;
-            background: map-get($pallette, purple);
-            width: 30px;
-            height: 5px;
-            border-radius: 5px;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 8px;
-                background: map-get($pallette, purple);
-                width: 30px;
-                height: 5px;
-                border-radius: 5px;
-            }
-
-            &:after {
-                content: '';
-                position: absolute;
-                top: -8px;
-                background: map-get($pallette, purple);
-                width: 30px;
-                height: 5px;
-                border-radius: 5px;
-            }
-        }
+        padding: 7px 10px;
     }
 
     .nav-menu {
+        width: 100%;
+        height: 100%;
+        background: rgba(map-get($pallette,sky), .9);
+        top: 0;
+        left: 0;
+        position: fixed;
+        border-right: 5px solid darken(#FFF, 20%);
+        display: none;
 
+        ul {
+            text-align: center;
+            margin: 100px 0;
+            font-size: $h2-font-size;
+
+            a {
+                padding: 20px 0;
+                display: block;
+                transition: all .3s;
+                color: #fff;
+
+                &:hover {
+                    background: rgba(map-get($pallette, blue), .8);
+                }
+            }
+        }
     } 
 
     #logo {
         background: transparent image-finder( logos, icon, purple, ulandFlag, png, outline ) center center no-repeat;
         float: right;
-        height: 35px;
+        height: 40px;
         width: 60px;
 
         a {
-            padding: 15px 30px;
+            padding: 20px 30px;
+            display: block;
         }
     }
+}
+
+ .nav-toggle {
+    height: 40px;
+    width: 40px;
+    padding: 15px 0;
+    float: left;
+    @include box-sizing(border-box);
+    cursor: pointer;
+    z-index: 999;
+    transition: all linear .3s;
+    position: absolute;
+
+    .patty {
+        position: relative;
+        background: map-get($pallette, purple);
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
+        margin: 3px auto;
+        transition: all linear .3s;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            background: map-get($pallette, purple);
+            width: 30px;
+            height: 5px;
+            border-radius: 5px;
+            transition: all linear .3s;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            background: map-get($pallette, purple);
+            width: 30px;
+            height: 5px;
+            border-radius: 5px;
+            transition: all linear .3s;
+        }
+    }
+}
+
+.toggle-open {
+    border: 3px solid #FFF;
+
+    .patty {
+        background: transparent;
+        margin: 0 auto;
+
+        &:before {
+            @include transform(rotate(45deg));
+            top: 1px;
+            height: 3px;
+            background-color: #FFF;
+            }
+        &:after {
+            @include transform(rotate(-45deg));
+            top: 1px;
+            height: 3px;                
+            background-color: #FFF;
+            }
+    }
+}
+
+.menu-open {
+     display: block !important;
+
 }
 
 //Site Title & Banner
@@ -242,7 +306,7 @@ a {
         display: block;
         transition: all $default-transition-time;
         
-        &:hover {
+        &:hover, &:active, &:focus {
             background: rgba(0,0,0,0.5);
 
             h2, h3 {
