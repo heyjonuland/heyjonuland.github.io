@@ -2,27 +2,27 @@
 
 //Box-sizing
 @mixin box-sizing($val) {
+	box-sizing: $val;
 	-webkit-box-sizing: $val;
 	-moz-box-sizing: $val;
 	-o-box-sizing: $val;
-	box-sizing: $val;
 }
 
 // Transform
 @mixin transform($val...) {
+	transform: $val;
 	-webkit-transform: $val;
 	-ms-transform: $val;
 	-moz-transform: $val;
 	-o-transform: $val;
-	transform: $val;
 }
 
 // Transition
 @mixin transition($attribute: all, $progression: linear, $delay: 0s, $timing: .3s) {
+	transition: $attribute, $progression, $delay, $timing;
 	-webkit-transition: $attribute, $progression, $delay, $timing;
 	-moz-transition: $attribute, $progression, $delay, $timing;
 	-o-transition: $attribute, $progression, $delay, $timing;
-	transition: $attribute, $progression, $delay, $timing;
 }
 //Breakpoint
 
