@@ -4,7 +4,6 @@
 @mixin box-sizing($val) {
 	-webkit-box-sizing: $val;
 	-moz-box-sizing: $val;
-	-ms-box-sizing: $val;
 	-o-box-sizing: $val;
 	box-sizing: $val;
 }
@@ -22,7 +21,6 @@
 @mixin transition($attribute: all, $progression: linear, $delay: 0s, $timing: .3s) {
 	-webkit-transition: $attribute, $progression, $delay, $timing;
 	-moz-transition: $attribute, $progression, $delay, $timing;
-	-ms-transition: $attribute, $progression, $delay, $timing;
 	-o-transition: $attribute, $progression, $delay, $timing;
 	transition: $attribute, $progression, $delay, $timing;
 }

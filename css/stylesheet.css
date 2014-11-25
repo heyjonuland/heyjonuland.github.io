@@ -66,7 +66,6 @@ ul {
   height: 60px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   padding: 8px 50px;
@@ -120,14 +119,12 @@ ul {
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
   z-index: 999;
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
-  -ms-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
   transition: all, linear, 0s, 0.3s;
   position: absolute;
@@ -141,7 +138,6 @@ ul {
   margin: 3px auto;
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
-  -ms-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
   transition: all, linear, 0s, 0.3s;
 }
@@ -155,7 +151,6 @@ ul {
   border-radius: 5px;
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
-  -ms-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
   transition: all, linear, 0s, 0.3s;
 }
@@ -169,7 +164,6 @@ ul {
   border-radius: 5px;
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
-  -ms-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
   transition: all, linear, 0s, 0.3s;
 }
@@ -235,7 +229,6 @@ ul {
   padding: 100px 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -293,7 +286,6 @@ ul {
   cursor: pointer;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -316,7 +308,6 @@ ul {
   position: absolute;
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
-  -ms-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
   transition: all, linear, 0s, 0.3s;
 }
@@ -333,13 +324,11 @@ ul {
   height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
-  -ms-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
   transition: all, linear, 0s, 0.3s;
 }
@@ -388,7 +377,6 @@ ul {
   padding: 15px 50px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   background: #0f0617;
