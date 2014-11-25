@@ -125,7 +125,11 @@ ul {
   box-sizing: border-box;
   cursor: pointer;
   z-index: 999;
-  transition: all linear .3s;
+  -webkit-transition: all, linear, 0s, 0.3s;
+  -moz-transition: all, linear, 0s, 0.3s;
+  -ms-transition: all, linear, 0s, 0.3s;
+  -o-transition: all, linear, 0s, 0.3s;
+  transition: all, linear, 0s, 0.3s;
   position: absolute;
 }
 .nav-toggle .patty {
@@ -135,7 +139,11 @@ ul {
   height: 5px;
   border-radius: 5px;
   margin: 3px auto;
-  transition: all linear .3s;
+  -webkit-transition: all, linear, 0s, 0.3s;
+  -moz-transition: all, linear, 0s, 0.3s;
+  -ms-transition: all, linear, 0s, 0.3s;
+  -o-transition: all, linear, 0s, 0.3s;
+  transition: all, linear, 0s, 0.3s;
 }
 .nav-toggle .patty:before {
   content: '';
@@ -145,7 +153,11 @@ ul {
   width: 30px;
   height: 5px;
   border-radius: 5px;
-  transition: all linear .3s;
+  -webkit-transition: all, linear, 0s, 0.3s;
+  -moz-transition: all, linear, 0s, 0.3s;
+  -ms-transition: all, linear, 0s, 0.3s;
+  -o-transition: all, linear, 0s, 0.3s;
+  transition: all, linear, 0s, 0.3s;
 }
 .nav-toggle .patty:after {
   content: '';
@@ -155,7 +167,11 @@ ul {
   width: 30px;
   height: 5px;
   border-radius: 5px;
-  transition: all linear .3s;
+  -webkit-transition: all, linear, 0s, 0.3s;
+  -moz-transition: all, linear, 0s, 0.3s;
+  -ms-transition: all, linear, 0s, 0.3s;
+  -o-transition: all, linear, 0s, 0.3s;
+  transition: all, linear, 0s, 0.3s;
 }
 
 .toggle-open {
@@ -298,7 +314,11 @@ ul {
 .portfolio-item h2, .portfolio-item h3 {
   color: transparent;
   position: absolute;
-  transition: all 0.3s;
+  -webkit-transition: all, linear, 0s, 0.3s;
+  -moz-transition: all, linear, 0s, 0.3s;
+  -ms-transition: all, linear, 0s, 0.3s;
+  -o-transition: all, linear, 0s, 0.3s;
+  transition: all, linear, 0s, 0.3s;
 }
 .portfolio-item h2 {
   bottom: 20px;
@@ -317,7 +337,11 @@ ul {
   -o-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  transition: all 0.3s;
+  -webkit-transition: all, linear, 0s, 0.3s;
+  -moz-transition: all, linear, 0s, 0.3s;
+  -ms-transition: all, linear, 0s, 0.3s;
+  -o-transition: all, linear, 0s, 0.3s;
+  transition: all, linear, 0s, 0.3s;
 }
 .portfolio-item a:hover, .portfolio-item a:active, .portfolio-item a:focus {
   background: rgba(0, 0, 0, 0.5);

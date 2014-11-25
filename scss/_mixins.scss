@@ -18,6 +18,14 @@
 	transform: $val;
 }
 
+// Transition
+@mixin transition($attribute: all, $progression: linear, $delay: 0s, $timing: .3s) {
+	-webkit-transition: $attribute, $progression, $delay, $timing;
+	-moz-transition: $attribute, $progression, $delay, $timing;
+	-ms-transition: $attribute, $progression, $delay, $timing;
+	-o-transition: $attribute, $progression, $delay, $timing;
+	transition: $attribute, $progression, $delay, $timing;
+}
 //Breakpoint
 
 @mixin breakpoint($device) {
