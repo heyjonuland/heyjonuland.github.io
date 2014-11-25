@@ -149,6 +149,11 @@ ul {
   width: 30px;
   height: 5px;
   border-radius: 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
   -webkit-transition: all, linear, 0s, 0.3s;
   -moz-transition: all, linear, 0s, 0.3s;
   -o-transition: all, linear, 0s, 0.3s;
