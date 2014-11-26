@@ -3,24 +3,6 @@
 <head>
 </head>
 <body>
-<?php 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = 'Website Mailer: ' + $_POST['subject'];
-	$mesage = $_POST['message'];
-	$to = 'uland.jf@gmail.com';
-
-	$body = "From: $name\n Message:\n $message";
-
-	if ($_POST['submit']) {
-		if (mail( $to, $subject, $body, $from)) {
-			echo '<p>Your message has been sent!</p>';
-		} else {
-			echo '<p>Oops! Something went wrong. Please try again!</p>'
-		}
-	}
-
-?>
 
 	<form method="post" action="contact.php">
 		
@@ -40,5 +22,25 @@
 
 	</form>
 
+	<?php 
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = 'Website Mailer: ' + $_POST['subject'];
+		$mesage = $_POST['message'];
+		$to = 'uland.jf@gmail.com';
+
+		$body = "From: $name\n Message:\n $message";
+
+		if ($_POST['submit']) {
+			if (mail( $to, $subject, $body, $from)) {
+				echo '<p>Your message has been sent!</p>';
+			} else {
+				echo '<p>Oops! Something went wrong. Please try again!</p>'
+			}
+		}
+
+	?>
+
 </body>
+
 </html>
