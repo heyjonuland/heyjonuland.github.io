@@ -4,13 +4,15 @@ $(document).ready( function () {
 	// Scroll Functionality
 
 	
-	$(window).scroll(function () {
-		$('.site-header').slideDown('fast');
-	});
-	
-
-	
 	$(window).scroll( function () {
+
+		// Header
+		if ($(window).scrollTop() > 30) {
+			$('.site-header').slideDown('fast');
+		} else if ($(window).scrollTop() < 30) {
+			$('.site-header').slideUp('fast');
+		}
+
 		// Portfolio Items
 		if ($(window).scrollTop() > $(window).height() ) {
 			var delay = 0,
