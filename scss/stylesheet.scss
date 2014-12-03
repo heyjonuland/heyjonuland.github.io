@@ -60,6 +60,8 @@ ul {
 
 //Site Header
 .site-header {
+    display: none;
+    position: fixed;
     background: #FFF;
     border-bottom: 5px solid darken(#fff, 20%);
     width: 100%;
@@ -193,7 +195,7 @@ ul {
 //Site Title & Banner
 .banner-container {
     background: map-get($pallette, purple);
-    height: 500px;
+    height: 100%;
 
       @include breakpoint(mobile) {
             height: 100%;
@@ -208,7 +210,7 @@ ul {
         @include breakpoint(tablet) {
             width: 100%;
             height: 190px;
-            margin: 30px 0;
+            margin: 10% 0 0 0;
             background-size: contain;
         }
     }
@@ -229,7 +231,7 @@ ul {
             color: #FFF;
             display: block;
             max-width: 80%;
-            margin: 20px auto;
+            margin: 15% auto;
 
              @include breakpoint(tablet) {
                 font-size: ($body-font-size * 2);
@@ -264,6 +266,8 @@ ul {
 }
 
 .portfolio-item {
+    opacity: 0;
+    display: block;
     width: 200px;
     height: 180px;
     background-size: contain;

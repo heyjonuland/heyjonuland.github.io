@@ -1,9 +1,35 @@
 (function() {
 	var app = angular.module('ulandWebsite', []);
 
+	app.controller('MenuController', function() {
+		this.links = menuItems;
+	});
+
 	app.controller('PortfolioController', function() {
 		this.items = portfolioItems;
 	});
+
+	var menuItems = [
+		{
+			name: "Home",
+			slug: "#"
+		},
+
+		{
+			name: "About",
+			slug: "about"
+		},
+
+		{
+			name: "Portfolio",
+			slug: "portfolio"
+		},
+
+		{
+			name: "Contact",
+			slug: "contact"
+		}
+	];
 
 	var portfolioItems = [
 

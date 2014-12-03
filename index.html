@@ -19,15 +19,10 @@
 				<div class="patty"></div>
 			</div>
 			
-			<div class="nav-menu" id="header-nav">
-				
+			<div class="nav-menu" id="header-nav" ng-controller="MenuController as menu">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+					<li ng-repeat="link in menu.links"><a href="/{{link.slug}}">{{link.name}}</a></li>
 				</ul>
-
 			</div>
 
 			<div id="logo" id="header-logo">
