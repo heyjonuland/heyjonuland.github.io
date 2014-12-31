@@ -1,5 +1,11 @@
 $(document).ready( function () {
 	
+	//AJAX TEST
+	$.ajax('portfolio-content.html', {
+		success: function(response) {
+			$('.portfolio-container').html(response);
+		} 
+	});
 
 	// Scroll Functionality
 
