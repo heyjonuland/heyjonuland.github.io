@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<svg width="480" height="300" viewBox="0 0 480 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke-width="20" stroke="white" fill="none" stroke-linecap="square">
+        <path id="square">
+            <animate begin="0" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 20,20 L 20,20" to="M 20,20 L 460,20" />
+            <animate begin=".4" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 20,20 L 460,20 L 460,20" to="M 20,20 L 460,20  L 460,280" />
+            <animate begin=".8" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 20,20 L 460,20  L 460,280 L 460,280" to="M 20,20 L 460,20  L 460,280 L 20,280" />
+            <animate begin="1.2" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 20,20 L 460,20  L 460,280 L 20,280 L 20,280" to="M 20,20 L 460,20  L 460,280 L 20,280 L 20,20" />
+        </path>
+        <path id="middle">
+            <animate begin="1.4" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 240,20 L 240,20" to="M 240,20 L 240,280" />
+        </path>
+        <path id="stripe-top">
+            <animate begin="1.8" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 240,87 L 240,87" to="M 240,87 L 460,87" />
+        </path>
+        <path id="stripe-middle">
+            <animate begin="1.8" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 240,150 L 240,150" to="M 240,150 L 460,150" />
+        </path>
+        <path id="stripe-bottom">
+            <animate begin="1.8" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 240,213 L 240,213" to="M 240,213 L 460,213" />
+        </path>
+        <path id="letter-top">
+            <animate begin="2.2" fill="freeze" dur=".4" repeatCount="1" attributeName="d" from="M 80,90 L 80,90" to="M 80,90 L 180,90" />
+        </path>
+        <path id="letter" opacity="0" d="M 80,127 L 80,167 
+            
+        C 80,200 110,210 130,210 
+            
+        C 150,210 180,200 180,167 
+            
+        L 180,127">
+            <animate begin="2.2" fill="freeze" dur=".4" repeatCount="1" attributeName="opacity" from="0" to="1" />
+        </path>
+    </g>
+</svg>
